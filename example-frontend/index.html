@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MP3Downloader</title>
+
+    <!-- jQuery + Plugins -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h3 id="Title">MP3Downloader</h3>
+
+    <!-- Search section -->
+    <div class="search-container">
+      <label for="Methods" >Search for</label>
+      <select name="Methods" id="Methods">
+        <option value="Song">Song</option>
+        <option value="Album">Album</option>
+      </select>
+      <input type="search" name="SearchBox" id="SearchBox" placeholder="Search">
+    </div>
+
+    <!-- Results section (placed separately under search) -->
+    <div id="Content"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
